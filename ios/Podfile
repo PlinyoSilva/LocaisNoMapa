@@ -8,6 +8,10 @@ target 'LocaisNoMapa' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  pod 'react-native-geolocation', :path => '../node_modules/@react-native-community/geolocation'
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   target 'LocaisNoMapaTests' do
     inherit! :complete
     # Pods for testing
