@@ -4,6 +4,7 @@ import MapView, {Marker} from 'react-native-maps';
 import Geolocation from '@react-native-community/geolocation';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
+
 export default function Map() {
   const [position, setPosition] = useState({
     latitude: -12.0000,
@@ -11,11 +12,6 @@ export default function Map() {
     latitudeDelta: 40.0100,
     longitudeDelta: 40.0100,
 });
-
-const [poi, setPoi] = useState({
-  latitude: 0,
-  longitude: 0,
-  });
 
   const request_location_runtime_permission = async () => {
     try {
@@ -55,9 +51,6 @@ const [poi, setPoi] = useState({
     );
   }
 
-  async function onPressHandler(e) {
-    const coordinate = e.nativeEvent.coordinate
-  }
 
   return (
     <View style={styles.container}>
