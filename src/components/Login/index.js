@@ -13,13 +13,11 @@ import
     LogBox,
   } from 'react-native';
 
-import styles from './styles';
+import styles from '../../assets/styles';
 
 import AuthContext from '../../contexts/auth';
 
 export default function Login(props) {
-
-  console.log(props);
     // const signed = useContext(AuthContext);
     //     console.log(signed);
 
@@ -135,8 +133,8 @@ export default function Login(props) {
             <Text style={styles.submitText}>Acessar</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.buttonRegister}>
-            <Text style={styles.registerText}>Criar conta gratuita</Text>
+          <TouchableOpacity style={styles.buttonRegister} onPress={()=>props.navigation.navigate('SignUp')}>
+            <Text style={styles.registerText}>Criar conta</Text>
           </TouchableOpacity>
         </Animated.View>
       </KeyboardAvoidingView>
