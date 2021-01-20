@@ -40,8 +40,8 @@ export default function Map() {
           ...position,
           latitude: pos.coords.latitude,
           longitude: pos.coords.longitude,
-          latitudeDelta: 0.0020,
-          longitudeDelta: 0.0020,
+          latitudeDelta: 0.0010,
+          longitudeDelta: 0.0010,
         });
       },
       error => {
