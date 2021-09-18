@@ -2,10 +2,10 @@ export function signIn(){
     return new Promise((resolve) =>{
         setTimeout(() =>{
             resolve({
-                token: 'sdfgasbdfysdbfsbvadjfvs',
+                token: 'token',
                 user: {
                     name:'Plinyo',
-                    email:'plinyosilvadev@gmail.com',
+                    email:'email',
                 },
             });
         }, 2000);
